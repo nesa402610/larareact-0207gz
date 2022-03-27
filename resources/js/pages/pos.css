@@ -1,0 +1,30 @@
+.green-box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    left: 200px;
+    top: 200px;
+}
+.red-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 100px;
+    top: 100px;
+}
+
+.box1 {
+    width: 50px;
+    padding: 1rem;
+    border: 2px solid grey;
+}
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    background-color: #dae0e5!important;
+}

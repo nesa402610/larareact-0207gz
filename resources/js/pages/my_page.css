@@ -1,0 +1,34 @@
+#MAIN {
+    display: flex;
+}
+/*Делаем флексбоксом, чтобы было удобно отсутупы делать, задаем черный фон и направление в колонку для флекса
+ Внутренние отступы по 1рем, как и отступы между элементами
+ */
+.box {
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: black ;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+/*Ленивимся дублировать код и задаем общие стили тут с тенью внутри, высотой и шириной и закруглением*/
+.box > div {
+    box-shadow: inset 0 0 15px 0 #e3d5d5;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+/*Задаем цвета*/
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
