@@ -263,6 +263,25 @@ const BootstrapMaket = () => {
                                        }}
                                     />
                                 </div>
+                                <div className="col-4 col-md-2 col-lg-2">
+                                    <i className="fa-brands fa-twitter"
+                                       style={{
+                                           background: 'linear-gradient(45deg, rgb(5 125 255) 5%, rgb(15 248 227))',
+                                           WebkitBackgroundClip: 'text',
+                                           WebkitTextFillColor: 'transparent'
+                                       }}
+                                    />
+                                </div>
+                                <div className="col-4 col-md-2 col-lg-2">
+                                    <i className="fa-brands fa-github"
+                                       style={{
+                                           background: 'linear-gradient(45deg, rgb(5 125 255) 5%, rgb(15 248 227))',
+                                           WebkitBackgroundClip: 'text',
+                                           WebkitTextFillColor: 'transparent'
+                                       }}
+                                    />
+                                </div>
+
                             </div>
                         </div>
                     </div>
