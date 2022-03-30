@@ -95,28 +95,47 @@ const BootstrapMaket = () => {
                 </button>
             </div>
             <div className="container-fluid mx-0 px-0 justify-content-around bg-dark">
-                <div className="container d-flex text-white justify-content-around py-4">
-                    <div className="col-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae in quam tempora. Accusantium
-                        ad
-                        cumque cupiditate debitis dolorem eaque earum enim incidunt natus necessitatibus nemo numquam,
-                        pariatur repellat soluta?
-                    </div>
-                    <div className="col-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis culpa doloribus
-                        magnam
-                        molestiae neque officia quas quo sequi voluptates? Dolorum ducimus enim laboriosam libero nam
-                        necessitatibus sint sit vitae.
-                    </div>
-                    <div className="col-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi consequuntur,
-                        corporis
-                        culpa debitis dicta dolorem eligendi, est fugiat itaque iusto nobis nostrum numquam odio quam
-                        quasi
-                        reprehenderit rerum vel.
+                <div className="container py-4">
+                    <div className="row">
+                        <div className="col-md-4 p-5">
+                            <div className="card border-info p-2 text-center bg-warning text-primary fa-10x">
+                                <NavLink to={'/traffic_light'}>
+                                    <i className="fa-solid fa-traffic-light"/>
+                                </NavLink>
+                            </div>
+                        </div>
+                        <div className="col-md-4 p-5">
+                            <div className="card border-info p-2 text-center bg-warning text-primary fa-10x">
+                                <NavLink to={'/'}>
+                                    <i className="fa-solid fa-paw"/>
+                                </NavLink>
+                            </div>
+                        </div>
+                        <div className="col-md-4 p-5">
+                            <div className="card border-info p-2 text-center bg-warning text-primary fa-10x">
+                                <NavLink to={'/cofe_ex_machina'}>
+                                    <i className="fa-solid fa-mug-saucer"/>
+                                </NavLink>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="box border"
+                                 style={{height: '300px'}}/>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="box border"
+                                 style={{height: '300px'}}/>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="box border"
+                                 style={{height: '300px'}}/>
+                        </div>
+                    </div>
+                </div>
                 <div className={'text-white d-flex align-items-center justify-content-center'}
                      style={{
                          backgroundImage: 'url("https://i.ytimg.com/vi/rH_DNaGrWwk/maxresdefault.jpg")',
@@ -134,7 +153,143 @@ const BootstrapMaket = () => {
                         </div>
                     </div>
                 </div>
+                <div className="container text-white py-2">
+                    <h2 className={'text-center'}>Связаться с нами</h2>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <h3>Контакты</h3>
+                            <div className="py-1">
+                                <i className="fa-solid fa-location-dot mr-2"></i>
+                                г. Москва, Рязанский проспект, д. 7, стр. 1
+                            </div>
+                            <div className="py-1">
+                                <i className="fa-brands fa-asymmetrik mr-2 text-danger"/>
+                                <span>Нижегородская (МЦК)</span>
+                            </div>
+                            <div className="py-1">
+                                <i className="fa-solid fa-clock mr-2"/>
+                                <span>Понедельник - четверг: с 8-30 по 17-15, пятница: с 8-30 по 16-00; обучение по графику в субботу.</span>
+                            </div>
+                            <div className="py-1">
+                                <a href="mailto:hotline@eduprof.ru"
+                                   className={'text-white'}
+                                >
+                                    <i className="fa-solid fa-envelope mr-2"/>
+                                    <span className={'text-info'}>hotline@eduprof.ru</span>
+                                </a>
+                            </div>
+                            <div className="py-1">
+
+                                <a href="tel:++74952605289"
+                                   className={'text-white'}>
+                                    <i className="fa-solid fa-phone mr-2"></i>
+                                    <span className={'text-info'}>+7 (495) 260-52-89</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-md-8">
+                            <h3> Форма обратной связи </h3>
+                            <form>
+                                <div className="form-group">
+                                    <label htmlFor="exampleInputEmail1">
+                                        Ваша почта email
+                                    </label>
+                                    <input type="email"
+                                           className="form-control"
+                                           id="exampleInputEmail1"
+                                           aria-describedby="emailHelp"
+                                           placeholder={'example@ruby.io'}
+                                    />
+                                    <small id="emailHelp"
+                                           className="form-text text-muted">
+                                        На эту почту Вы получите ответ от нас.
+                                    </small>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="">Ваше имя</label>
+                                    <input type="text"
+                                           className={'form-control'}
+                                           id={'nameInput'}
+                                           placeholder={'Киберкотлета'}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="exampleFormControlTextarea1">Ваше сообщение</label>
+                                    <textarea className="form-control"
+                                              id="exampleFormControlTextarea1"
+                                              rows="2"
+                                              placeholder={'Что Вы хотите нам сказать?'}
+                                    />
+                                </div>
+                                <div className="form-group form-check">
+                                    <input type="checkbox"
+                                           className="form-check-input"
+                                           id="exampleCheck1"/>
+                                    <label className="form-check-label"
+                                           htmlFor="exampleCheck1">
+                                        Согласие на обработку данных
+                                    </label>
+                                </div>
+                                <button type="submit"
+                                        className="btn btn-success">
+                                    Отправить
+                                </button>
+                            </form>
+                            <div className="row display-4 justify-content-end text-right">
+                                <div className="col-4 col-md-2 col-lg-2">
+                                    <i className="fa-brands fa-vk"
+                                       style={{
+                                           background: 'linear-gradient(45deg, rgb(162 52 83) 33%, rgb(13, 97, 188) 66%, rgb(138, 169, 214))',
+                                           WebkitBackgroundClip: 'text',
+                                           WebkitTextFillColor: 'transparent'
+                                       }}
+                                    />
+                                </div>
+                                <div className="col-4 col-md-2 col-lg-2">
+                                    <i className="fa-brands fa-facebook"
+                                       style={{
+                                           background: 'linear-gradient(45deg, rgb(5 125 255) 5%, rgb(15 248 227))',
+                                           WebkitBackgroundClip: 'text',
+                                           WebkitTextFillColor: 'transparent'
+                                       }}
+                                    />
+                                </div>
+                                <div className="col-4 col-md-2 col-lg-2">
+                                    <i className="fa-brands fa-instagram"
+                                       style={{
+                                           background: 'linear-gradient(87deg, rgb(202 25 239) 33%, rgb(216 29 60) 50%, rgb(42 112 214))',
+                                           WebkitBackgroundClip: 'text',
+                                           WebkitTextFillColor: 'transparent'
+                                       }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row justify-content-center py-2">
+                    <div className="col-md-5">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A67e0f05322460c16567a6aa3836d18024d2d1f4753829b2fdaf790ef96b1b50c&amp;source=constructor"
+                                width="100%"
+                                height="400"
+                                frameBorder="0"/>
+                    </div>
+                    <div className="col-md-5">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qu0GppGCb-1ZTNskeUjONJMIPdSrdF8h&ehbc=2E312F"
+                                width="100%"
+                                height="400"/>
+                    </div>
+                </div>
             </div>
+            <footer>
+                <div className="container-fluid bg-dark text-white">
+                    <div className="container text-right">
+                        <i className="fa-solid fa-copyright mr-2"></i>
+                        <span>Все права защищены. </span>
+                        {new Date().getFullYear()}
+                    </div>
+                </div>
+            </footer>
         </>
     );
 };
