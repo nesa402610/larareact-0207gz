@@ -13,6 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script src="/js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/8e069c171a.js" crossorigin="anonymous"></script>
     <title>Larave React 0207</title>
 </head>
 <body>
