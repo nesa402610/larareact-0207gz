@@ -11,13 +11,14 @@ import Bootstrap from "./pages/bootstrap";
 import Aside_nav from "./components/aside_nav";
 import Bootstra2 from "./pages/bootstra-2";
 import BootstrapMaket from "./pages/bootstrap-maket";
+import FullPage from "./pages/full-page";
 
 const Index = () => {
     const [sidebar, setSidebar] = useState(true);
     const location = useLocation()
 
     useEffect(() => {
-        if (location.pathname === '/bootstrap-maket') {
+        if (location.pathname === '/bootstrap-maket'|| location.pathname === '/Integrator') {
             setSidebar(false);
         } else setSidebar(true)
     }, [location]);
@@ -36,6 +37,7 @@ const Index = () => {
                     <Route path={'bootstrap'} element={<Bootstrap/>}/>
                     <Route path={'bootstrap2'} element={<Bootstra2/>}/>
                     <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
+                    <Route path={'Integrator'} element={<FullPage/>}/>
                 </Routes>
             </div>
         </div>

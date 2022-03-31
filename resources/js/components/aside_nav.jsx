@@ -26,6 +26,8 @@ const AsideNav = () => {
             <NavLink className={'bg-light p-2'}
                      to={'/bootstrap-maket'}>Bootstrap - верстка</NavLink>
             <NavLink className={'bg-light p-2 '}
+                     to={'/Integrator'}>Верстка сайта</NavLink>
+            <NavLink className={'bg-light p-2 '}
                      to={'/cofe_ex_machina'}>Кофемашина</NavLink>
 
         </aside>
