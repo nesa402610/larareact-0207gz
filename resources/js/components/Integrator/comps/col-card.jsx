@@ -1,7 +1,7 @@
 import React from 'react';
 import img_1 from "../src/img_1.webp";
 
-const ColCard = ({title, msg}) => {
+const ColCard = ({title, msg, img}) => {
     return (
         <div className="col-md-4 px-0 d-flex">
             <div className="card border-left border-right border-top-0 border-bottom-0">
@@ -10,7 +10,7 @@ const ColCard = ({title, msg}) => {
                         style={{
                             height: '173px',
                             textShadow: '0 0 2px black',
-                            backgroundImage: `url(${img_1})`,
+                            backgroundImage: `url(${img})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}>

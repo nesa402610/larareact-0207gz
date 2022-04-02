@@ -50,11 +50,14 @@ const HightlightCols = () => {
             {/*<HightlightColsText/>*/}
             <div className="row">
                 <ColCard title={'Some news about audit'}
-                         msg={msg}/>
+                         msg={msg}
+                         img={img_1}/>
                 <ColCard title={'Top news from insider'}
-                         msg={msg2}/>
+                         msg={msg2}
+                         img={img_2}/>
                 <ColCard title={'Integration'}
-                         msg={msg3}/>
+                         msg={msg3}
+                         img={img_3}/>
             </div>
         </div>
     );
