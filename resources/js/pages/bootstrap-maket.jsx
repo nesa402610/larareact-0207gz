@@ -286,7 +286,7 @@ const BootstrapMaket = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row justify-content-center py-2">
+                <div className="row mx-0 justify-content-center py-2">
                     <div className="col-md-5">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A67e0f05322460c16567a6aa3836d18024d2d1f4753829b2fdaf790ef96b1b50c&amp;source=constructor"
                                 width="100%"
