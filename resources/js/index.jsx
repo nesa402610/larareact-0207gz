@@ -15,12 +15,13 @@ import FullPage from "./pages/full-page";
 
 const Index = () => {
     const [sidebar, setSidebar] = useState(true);
-    const location = useLocation()
+    const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/bootstrap-maket'|| location.pathname === '/Integrator') {
+        if (location.pathname.match(/\/non-sidebar/)) {
+            console.log(1);
             setSidebar(false);
-        } else setSidebar(true)
+        } else setSidebar(true);
     }, [location]);
     return (
         <div className={`container-fluid px-0 ${sidebar ? ' d-flex' : ''}`}>
@@ -36,8 +37,11 @@ const Index = () => {
                     <Route path={'contacts'} element={<Contacts/>}/>
                     <Route path={'bootstrap'} element={<Bootstrap/>}/>
                     <Route path={'bootstrap2'} element={<Bootstra2/>}/>
-                    <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
-                    <Route path={'Integrator'} element={<FullPage/>}/>
+                    <Route path={'non-sidebar/'}>
+                        <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
+                        <Route path={'Integrator'} element={<FullPage/>}/>
+                    </Route>
+
                 </Routes>
             </div>
         </div>
