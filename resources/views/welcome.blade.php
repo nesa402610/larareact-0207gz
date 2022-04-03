@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
+    <meta name="yandex-verification" content="610e1e1fe270a6d3" />
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
