@@ -12,6 +12,7 @@ import Aside_nav from "./components/aside_nav";
 import Bootstra2 from "./pages/bootstra-2";
 import BootstrapMaket from "./pages/bootstrap-maket";
 import FullPage from "./pages/full-page";
+import CofeExMachina from "./pages/cofe_ex_machina";
 
 const Index = () => {
     const [sidebar, setSidebar] = useState(true);
@@ -37,6 +38,7 @@ const Index = () => {
                     <Route path={'contacts'} element={<Contacts/>}/>
                     <Route path={'bootstrap'} element={<Bootstrap/>}/>
                     <Route path={'bootstrap2'} element={<Bootstra2/>}/>
+                    <Route path={'cofe_ex_machina'} element={<CofeExMachina/>}/>
                     <Route path={'non-sidebar/'}>
                         <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
                         <Route path={'Integrator'} element={<FullPage/>}/>
