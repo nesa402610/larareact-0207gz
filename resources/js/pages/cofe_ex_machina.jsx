@@ -1,28 +1,49 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const CofeExMachina = () => {
-    // let login = prompt('Введите логин');
-    // let password = prompt('Введите пароль');
-    // if (login === 'admin' && password === 'admin') {
-    //     console.log('Доступ админа разрешен');
-    // } else if (login === 'user') {
-    //     console.log('Доступ разрешен');
-    // } else {
-    //     console.log('Доступ запрещен');
-    // }
-    // let exit = prompt();
-    let i = 0
-    // while(exit !== "exit") {
-    //     console.log("Hello!");
-    //     exit = prompt("Введите слово exit для выхода из цикла");
-    // }
-    for (let i = 0; i < 5;) {
-        console.log(i);
-        i++
-    }
+    const coffes = [
+        {name: 'Американо', price: 150},
+        {name: 'Эспрессо', price: 250},
+        {name: 'Латте', price: 200},
+        {name: 'Чай', price: 70},
+        {name: 'Вода', price: 30}
+    ];
     return (
-        <div className={'container-fluid p-2'}>
-            <h2>Тут будет чистый жс. На реакте. Да, треш</h2>
+        <div className={'container-fluid p-2 bg-dark text-white'}>
+            <h1>Кофе-машина</h1>
+            <div className="row">
+                <div className="col-3">
+                    <div className="d-flex flex-column">
+                        {coffes.map((item) =>
+                            <div className={'d-flex justify-content-between border'}>
+                                <div>
+                                    {item.name}
+                                </div>
+                                <div>
+                                    {item.price}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+                <div className="col-4">
+
+                </div>
+                <div className="col-4">
+
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-1">
+                    1000
+                </div>
+                <div className="col-1">
+                    500
+                </div>
+                <div className="col-1">
+                    100
+                </div>
+            </div>
         </div>
     );
 };
