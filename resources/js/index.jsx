@@ -27,25 +27,23 @@ const Index = () => {
     return (
         <div className={`container-fluid px-0 ${sidebar ? ' d-flex' : ''}`}>
             {sidebar ? <Aside_nav/> : ''}
-            <div>
-                <Routes>
-                    <Route path={'/'} element={<First_veb/>}/>
-                    <Route path={'/my_page'} element={<My_page/>}/>
-                    <Route path={'/traffic_light'} element={<Traffic_light/>}/>
-                    <Route path={'positions'} element={<Positions/>}/>
-                    <Route path={'flex'} element={<Flex/>}/>
-                    <Route path={'pxremem'} element={<Pxremem/>}/>
-                    <Route path={'contacts'} element={<Contacts/>}/>
-                    <Route path={'bootstrap'} element={<Bootstrap/>}/>
-                    <Route path={'bootstrap2'} element={<Bootstra2/>}/>
-                    <Route path={'cofe_ex_machina'} element={<CofeExMachina/>}/>
-                    <Route path={'non-sidebar/'}>
-                        <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
-                        <Route path={'Integrator'} element={<FullPage/>}/>
-                    </Route>
+            <Routes>
+                <Route path={'/'} element={<First_veb/>}/>
+                <Route path={'/my_page'} element={<My_page/>}/>
+                <Route path={'/traffic_light'} element={<Traffic_light/>}/>
+                <Route path={'positions'} element={<Positions/>}/>
+                <Route path={'flex'} element={<Flex/>}/>
+                <Route path={'pxremem'} element={<Pxremem/>}/>
+                <Route path={'contacts'} element={<Contacts/>}/>
+                <Route path={'bootstrap'} element={<Bootstrap/>}/>
+                <Route path={'bootstrap2'} element={<Bootstra2/>}/>
+                <Route path={'cofe_ex_machina'} element={<CofeExMachina/>}/>
+                <Route path={'non-sidebar/'}>
+                    <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
+                    <Route path={'Integrator'} element={<FullPage/>}/>
+                </Route>
 
-                </Routes>
-            </div>
+            </Routes>
         </div>
     );
 };
