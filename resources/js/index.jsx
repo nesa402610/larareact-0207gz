@@ -42,7 +42,6 @@ const Index = () => {
                     <Route path={'bootstrap-maket'} element={<BootstrapMaket/>}/>
                     <Route path={'Integrator'} element={<FullPage/>}/>
                 </Route>
-
             </Routes>
         </div>
     );

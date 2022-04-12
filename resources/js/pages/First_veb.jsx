@@ -1,6 +1,15 @@
 import React from 'react';
 
 const FirstVeb = () => {
+
+    function power(base, exponent) {
+        let result = 1;
+        for(let i=1; i < exponent; i++) {
+            result *= base; // result*base
+        }
+        return result;
+    }
+    console.log(power(2,10));
     return (
         <div className={'col-8'}>
             <div>
